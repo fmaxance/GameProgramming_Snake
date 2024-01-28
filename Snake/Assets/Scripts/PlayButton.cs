@@ -6,14 +6,26 @@ using UnityEngine.UI;
 
 public class PlayButton : MonoBehaviour
 {
-    public Button playButton;
+    public Button EasyButton;
+    public Button MediumButton;
+    public Button HardButton;
     // Start is called before the first frame update
     void Start()
     {
-        playButton.onClick.AddListener(PlayGame);
+        EasyButton.onClick.AddListener(EasyGame);
+        MediumButton.onClick.AddListener(MediumGame);
+        HardButton.onClick.AddListener(HardGame);
     }
-    void PlayGame()
+    void EasyGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameEasy");
+    }
+    void MediumGame()
+    {
+        SceneManager.LoadScene("GameMedium");
+    }
+    void HardGame()
+    {
+        SceneManager.LoadScene("GameHard");
     }
 }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Food
+  - PoisonedFood
   layers:
   - Default
   - TransparentFX

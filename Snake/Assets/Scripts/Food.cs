@@ -27,5 +27,9 @@ public class Food : MonoBehaviour
     private void OnTriggerEnter2D()
     {
         SpawnFood();
+        if (gameObject.tag == "PoisonedFood")
+        {
+            SpawnFood();
+        }
     }
 }

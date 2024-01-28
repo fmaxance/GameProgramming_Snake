@@ -14,6 +14,6 @@ public class RetryButton : MonoBehaviour
     }
     void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("MainMenu");
     }
 }
